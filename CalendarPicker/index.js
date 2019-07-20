@@ -250,6 +250,8 @@ export default class CalendarPicker extends Component {
       previousTitle,
       nextTitle,
       textStyle,
+      prevTitleStyle,
+      nextTitleStyle,
       todayTextStyle,
       selectedDayStyle,
       selectedRangeStartStyle,
@@ -330,6 +332,8 @@ export default class CalendarPicker extends Component {
             previousTitle={previousTitle}
             nextTitle={nextTitle}
             textStyle={textStyle}
+            prevTitleStyle={prevTitleStyle}
+            nextTitleStyle={nextTitleStyle}
           />
           <Weekdays
             styles={styles}
