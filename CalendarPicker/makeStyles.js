@@ -10,7 +10,7 @@ const DEFAULT_TODAY_BACKGROUND_COLOR = '#CCCCCC';
 
 function getBorderRadiusByShape(scaler, dayShape) {
   if (dayShape === 'square') {
-    return 0;
+    return 8;
   } else {
     return 30*scaler;
   }
@@ -47,8 +47,8 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
 
     dayLabelsWrapper: {
       flexDirection: 'row',
-      borderBottomWidth: 1,
-      borderTopWidth: 1,
+      borderBottomWidth: 0,
+      borderTopWidth: 0,
       paddingTop: 10*scaler,
       paddingBottom: 10*scaler,
       alignSelf: 'center',

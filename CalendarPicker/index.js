@@ -250,6 +250,8 @@ export default class CalendarPicker extends Component {
       previousTitle,
       nextTitle,
       textStyle,
+      monthTextStyle,
+      weekdayTextStyle,
       prevTitleStyle,
       nextTitleStyle,
       todayTextStyle,
@@ -331,7 +333,7 @@ export default class CalendarPicker extends Component {
             months={months}
             previousTitle={previousTitle}
             nextTitle={nextTitle}
-            textStyle={textStyle}
+            monthTextStyle={monthTextStyle}
             prevTitleStyle={prevTitleStyle}
             nextTitleStyle={nextTitleStyle}
           />
@@ -339,7 +341,7 @@ export default class CalendarPicker extends Component {
             styles={styles}
             startFromMonday={startFromMonday}
             weekdays={weekdays}
-            textStyle={textStyle}
+            textStyle={weekdayTextStyle}
           />
           <DaysGridView
             enableDateChange={enableDateChange}
